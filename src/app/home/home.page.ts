@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  private static readonly VERSION = '3.0.0a2';
+  private static readonly VERSION = '3.0.0a3';
 
   constructor(private router: Router) {}
 
@@ -20,10 +20,10 @@ export class HomePage {
   }
 
   navigateToSettings(): void {
-    //this.router.navigateByUrl('/new-game');
+    this.router.navigateByUrl('/app-settings');
   }
 
   navigateToHallOfFame(): void {
-    //this.router.navigateByUrl('/new-game');
+    this.router.navigateByUrl('/hall-of-fame');
   }
 }
