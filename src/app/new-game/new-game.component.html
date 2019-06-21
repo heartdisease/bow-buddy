@@ -1,0 +1,116 @@
+<h1>New Game</h1>
+
+<ul class="collapsible">
+  <li class="active">
+    <div class="collapsible-header">
+      <i class="material-icons">person_pin</i> Choose players
+    </div>
+    <div class="collapsible-body">
+      <!-- BEGIN PLAYER SELECTION -->
+
+      <div class="container">
+        <div class="select-player-container row">
+          <div class="col s12">
+            <select class="player-select">
+              <!-- PLAYER OPTIONS -->
+            </select>
+            <label>Choose player</label>
+          </div>
+        </div>
+        <div class="add-player-container row" style="display: none;">
+          <div class="col s10">
+            <input
+              type="text"
+              placeholder="Add new player"
+              class="new-player-name form-control"
+              aria-label="Add new player"
+            />
+          </div>
+          <div class="col s2">
+            <a
+              class="waves-effect waves-light btn-small disabled add-player-btn"
+              href="#"
+            >
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Email</th>
+            <th>Rang</th>
+          </tr>
+        </thead>
+        <tbody class="player-entries">
+          <!-- PLAYER ENTRIES -->
+        </tbody>
+      </table>
+
+      <!-- END PLAYER SELECTION -->
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header">
+      <i class="material-icons">place</i> Choose course
+    </div>
+    <div class="collapsible-body">
+      <!-- BEGIN COURSE SELECTION -->
+
+      <div class="">
+        <div class="select-course-container">
+          <select class="course-select">
+            <!-- COURSE OPTIONS -->
+          </select>
+          <label>Choose course</label>
+        </div>
+        <div class="add-course-container" style="display: none;">
+          <input
+            type="text"
+            placeholder="Add new course"
+            class="new-course-name form-control"
+            aria-label="Add new course"
+          />
+          <input
+            type="number"
+            placeholder="#"
+            class="new-course-no-of-stations form-control"
+            aria-label="No. of stations"
+          />
+          <span class="input-group-btn">
+            <a
+              class="waves-effect waves-light btn-small disabled set-course-btn"
+              href="#"
+            >
+              <i class="material-icons">add</i>
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Place</th>
+            <th>Stations</th>
+          </tr>
+        </thead>
+        <tbody class="course-entries">
+          <!-- COURSE ENTRIES -->
+        </tbody>
+      </table>
+
+      <!-- END PLAYER SELECTION -->
+    </div>
+  </li>
+</ul>
+
+<div>
+  <a class="waves-effect waves-light btn disabled start-game-btn" href="#">
+    <i class="material-icons left">play_arrow</i> Start Game
+  </a>
+</div>
