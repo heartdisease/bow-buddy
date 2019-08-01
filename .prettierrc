@@ -5,11 +5,11 @@
   "proseWrap": "always",
   "printWidth": 80,
   "singleQuote": true,
-  "trailingComma": "es5",
-  "htmlWhitespaceSensitivity": "ignore",
+  "trailingComma": "all",
+  "htmlWhitespaceSensitivity": "css",
   "overrides": [
     {
-      "files": ".prettierrc",
+      "files": [".prettierrc", ".stylelintrc"],
       "options": { "parser": "json" }
     }
   ]

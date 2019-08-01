@@ -9,9 +9,10 @@
 log.txt
 *.sublime-project
 *.sublime-workspace
-.vscode/
 npm-debug.log*
 
+.vscode/**
+!.vscode/extensions.json
 .idea/
 .ionic/
 .sourcemaps/
@@ -32,3 +33,7 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+*.dbdump
+*.token
+.git-credentials
